@@ -5,14 +5,19 @@ ForeCastly is a modern, responsive weather application built with vanilla JavaSc
 ![ForeCastly Weather App](./assets/images/weather-app.png)
 
 ## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [How It Works](#how-it-works)
-- [API Integration](#api-integration)
-- [Styling](#styling)
-- [Contributing](#contributing)
+- [ForeCastly - Weather Application](#forecastly---weather-application)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Setup and Installation](#setup-and-installation)
+  - [How It Works](#how-it-works)
+    - [Core Functionality](#core-functionality)
+    - [Code Structure](#code-structure)
+  - [API Integration](#api-integration)
+  - [Styling](#styling)
+  - [Assets Credits](#assets-credits)
+  - [Contributing](#contributing)
 
 ## Features
 - Real-time weather data display
@@ -148,6 +153,7 @@ The application uses a combination of Tailwind CSS and custom CSS:
 
 - <a href="https://www.flaticon.com/free-icons/weather-app" title="weather app icons">Weather app icons created by Edi Prast - Flaticon</a>
 
+<a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a>
 
 ## Contributing
 
