@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App | Home</title>
+    
+    <!-- Favicon for the browser tab -->
     <link rel="shortcut icon" href="./assets/images/weather-news.png" type="image/x-icon">
+    
+    <!-- Tailwind CSS output and custom styles -->
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="bg-slate-950 flex items-center justify-center min-h-screen">
 
+    <!-- Main weather container -->
     <div id="weather-container" class="weather-container">
         <div>
+            <!-- App title -->
             <h1 class="text-white text-4xl">ForeCastly </h1>
         </div>
         <div>
+            <!-- Weather app logo -->
             <img style="width: 150px;" src="./assets/images/weather-app.png" alt="">
         </div>
         <div>
@@ -25,26 +32,32 @@
                 <input type="text" id="searchInput" class="p-2 w-full text-black bg-white focus:outline-0"
                     placeholder="Enter city name..." autocomplete="off">
     
-                <!-- Suggestion List -->
+                <!-- Suggestion List (Hidden by default) -->
                 <ul id="suggestions"
                     class="suggestionList absolute left-0 w-full hidden bg-white border border-gray-200 rounded mt-1 shadow-md z-10">
                 </ul>
             </div>
+            
             <!-- Search Button -->
             <button id="search-btn"
                 class="cursor-pointer bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600 transition duration-300">
                 Get Weather Details
             </button>
         </div>
-
     </div>
 
-    <!-- Weather Details -->
+    <!-- Weather Details Section (Initially Hidden) -->
     <div id="weather-details"
         class="weather-details mt-4 p-4 bg-slate-950 rounded-lg shadow flex-col gap-5 w-96 hidden">
         <h2 id="location-name" class="text-xl font-semibold text-white"></h2>
+        
+        <!-- Weather icon (Hidden initially) -->
         <img id="weather-icon" class="mx-auto my-2 hidden w-20 h-20" alt="Weather Icon">
+        
+        <!-- Temperature display -->
         <p id="temperature-display" class="text-5xl font-medium text-white"></p>
+        
+        <!-- Weather description -->
         <p id="weather-description" class="text-white"></p>
 
         <!-- Back Button -->
@@ -52,8 +65,7 @@
             class="cursor-pointer bg-gray-400 text-white px-4 py-2 mt-3 rounded hover:bg-gray-500 transition duration-300">Back</button>
     </div>
 
-
-    <!-- <script src="./js/app.js"></script> -->
+    <!-- JavaScript file for functionality -->
     <script type="module" src="./js/main.js"></script>
 </body>
 

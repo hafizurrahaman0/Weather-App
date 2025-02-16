@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ================================ */
+/* Color Variables for Easy Changes */
+/* ================================ */
 :root {
     --color-01: #222831;
     --color-02: #393E46;
@@ -8,7 +11,9 @@
     --color-05: #ffffff;
 }
 
-/* General Reset */
+/* ================================ */
+/* Reset Default Styles for Consistency */
+/* ================================ */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +23,9 @@
     font-family: 'Poppins', serif;
 }
 
-
-/* ======================================= */
-/* Body Styles */
-/* ======================================= */
-
+/* ================================ */
+/* Full Page Background Styling */
+/* ================================ */
 body {
     width: 100vw;
     min-height: 100vh;
@@ -32,10 +35,9 @@ body {
     align-items: center;
 }
 
-/* ======================================= */
-/* Weather Container Styles */
-/* ======================================= */
-
+/* ================================ */
+/* Weather Container Styling */
+/* ================================ */
 .weather-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +51,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 350px;
     min-height: 400px;
+
+    /* Frosted glass effect */
     background: rgb(255 255 255 / 14%);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.5px);
@@ -57,21 +61,14 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+/* Ensures icons inside weather container are properly sized */
 .weather-container div img {
     width: 30px;
 }
 
-.suggestionList {
-    top: 100px;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* ======================================= */
-/* Weather Details Styles */
-/* ======================================= */
-
+/* ================================ */
+/* Weather Details Section */
+/* ================================ */
 .weather-details {
     display: flex;
     flex-direction: column;
@@ -86,6 +83,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 350px;
     margin: auto;
+
+    /* Frosted glass effect for consistency */
     background: rgb(255 255 255 / 14%);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.5px);
@@ -94,19 +93,20 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+/* Ensures weather icons are properly sized */
 .weather-details img {
     width: 70px;
 }
 
+/* Large placeholder for weather icon */
 .icon-placeholder {
     font-size: 4rem;
     margin-bottom: 20px;
 }
 
-/* ======================================= */
-/* Utility Classes */
-/* ======================================= */
-
+/* ================================ */
+/* Input Field Styling */
+/* ================================ */
 input {
     display: block;
     width: 100%;
@@ -116,6 +116,9 @@ input {
     border-radius: 5px;
 }
 
+/* ================================ */
+/* Button Styling */
+/* ================================ */
 button {
     padding: 10px 20px;
     background: var(--color-03);
@@ -126,18 +129,26 @@ button {
     width: 100%;
 }
 
+/* Button hover effect */
 button:hover {
     background: #007e85;
 }
 
+/* ================================ */
+/* Utility Classes */
+/* ================================ */
+
+/* Flexbox helper class */
 .flex {
     display: flex;
 }
 
+/* Hide elements when needed */
 .hidden {
     display: none;
 }
 
+/* Styling for suggested city names in the dropdown */
 .suggestion-list {
     cursor: pointer;
     display: block;
@@ -148,6 +159,7 @@ button:hover {
     transition: all 0.2s ease-in-out;
 }
 
+/* Hover effect for city suggestions */
 .suggestion-list:hover {
     background-color: #333;
     color: #fff;
